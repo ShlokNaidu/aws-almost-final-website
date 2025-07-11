@@ -616,7 +616,7 @@ function initializeAccessibility() {
         position: absolute;
         top: -40px;
         left: 6px;
-        background: var(--primary-600);
+        background: var(--aws-orange);
         color: white;
         padding: 8px;
         text-decoration: none;
