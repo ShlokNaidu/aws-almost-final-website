@@ -1230,6 +1230,8 @@ section {
         margin: 0 auto;
     }
 }
+
+.benefit-tags {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
