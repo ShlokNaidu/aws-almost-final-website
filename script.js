@@ -668,3 +668,38 @@ function initializeAccessibility() {
 
 // Initialize accessibility features
 initializeAccessibility();
+
+// Event Announcement Functions
+function initializeEventAnnouncement() {
+    const announcement = document.getElementById('event-announcement');
+    
+    // Check if announcement was previously closed
+    const announcementClosed = localStorage.getItem('announcementClosed');
+    const today = new Date().toDateString();
+    
+    if (announcementClosed === today) {
+        announcement.classList.add('hidden');
+    }
+    
+    // Auto-hide after 10 seconds if not interacted with
+    setTimeout(() => {
+        if (!announcement.classList.contains('hidden')) {
+            announcement.style.opacity = '0.8';
+        }
+    }, 10000);
+}
+
+function closeAnnouncement() {
+    const announcement = document.getElementById('event-announcement');
+    const today = new Date().toDateString();
+    
+    announcement.style.transform = 'translateY(-100%)';
+    announcement.style.opacity = '0';
+    
+    setTimeout(() => {
+        announcement.classList.add('hidden');
+    }, 300);
+    
+    // Remember that user closed it today
+    localStorage.setItem('announcementClosed', today);
+}

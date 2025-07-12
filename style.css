@@ -2064,10 +2064,6 @@ section {
         gap: var(--space-2xl);
     }
     
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .contact-content {
         grid-template-columns: 1fr;
         gap: var(--space-2xl);
@@ -2110,6 +2106,16 @@ section {
     
     .mobile-menu-btn {
         display: flex;
+    }
+    
+    .event-announcement {
+        top: 70px;
+    }
+    
+    .announcement-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
     }
     
     .hero-content {
@@ -2179,6 +2185,16 @@ section {
     }
     
     .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .announcement-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .announcement-btn {
         width: 100%;
         justify-content: center;
     }
