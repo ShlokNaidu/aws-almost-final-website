@@ -397,19 +397,23 @@ function initializeTeamSection() {
         teamToggleBtn.innerHTML = `<i class="fas fa-users"></i>${buttonText}`;
     }
     
-    function updateTeamSections() {
-        const prefix = currentYear === 'current' ? '' : 'previous-';
-        const allSections = document.querySelectorAll('.team-section');
-        
-        allSections.forEach(section => {
-            section.classList.remove('active');
-        });
-        
-        const targetSection = document.getElementById(`${prefix}${currentTeam}-team`);
-        if (targetSection) {
-            targetSection.classList.add('active');
-        }
+function updateTeamSections() {
+    const prefix = currentYear === 'current' ? '' : 'previous-';
+    const allSections = document.querySelectorAll('.team-section');
+    
+    allSections.forEach(section => {
+        section.classList.remove('active');
+    });
+    
+    const targetSection = document.getElementById(`${prefix}${currentTeam}-team`);
+    if (targetSection) {
+        targetSection.classList.add('active');
+    } else {
+        // Fallback for teams that don't exist in previous year
+        const currentSection = document.getElementById(`${currentTeam}-team`);
+        if (currentSection) currentSection.classList.add('active');
     }
+}
     
     // Team tab functionality
     teamTabButtons.forEach(button => {
@@ -485,7 +489,7 @@ function initializeScrollEffects() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.style.opacity = '1';
+                // img.style.opacity = '0';
                 img.style.transform = 'scale(0.8)';
                 
                 img.onload = () => {
