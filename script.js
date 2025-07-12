@@ -485,7 +485,7 @@ function initializeScrollEffects() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
-                img.style.opacity = '0';
+                img.style.opacity = '1';
                 img.style.transform = 'scale(0.8)';
                 
                 img.onload = () => {

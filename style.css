@@ -183,6 +183,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    top: 75px;
     z-index: 10001;
     background: var(--gradient-announcement);
     color: white;
@@ -319,7 +320,7 @@ body {
 /* Adjust navbar for announcement */
 .navbar {
     position: fixed;
-    top: 70px;
+    top: 0px;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -960,6 +961,7 @@ section {
 /* About Section */
 .about {
     background: var(--bg-secondary);
+    width:100%;
 }
 
 .about-content {
@@ -968,6 +970,7 @@ section {
     gap: var(--space-3xl);
     margin-bottom: var(--space-3xl);
     align-items: center;
+    width:100%;
 }
 
 .about-text {
@@ -983,6 +986,7 @@ section {
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--border-color);
     transition: all var(--transition-normal);
+    width:100%;
 }
 
 .about-card:hover {
@@ -1853,6 +1857,8 @@ section {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    border-radius: var(--radius-lg);
+    object-position: top
 }
 
 .head-info h4 {
@@ -1875,9 +1881,8 @@ section {
 }
 
 .team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-xl);
+    display:flex;
+    gap:5%;
 }
 
 .team-member {
@@ -1899,12 +1904,15 @@ section {
     width: 80px;
     height: 80px;
     margin: 0 auto var(--space-md);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     overflow: hidden;
-    border: 3px solid var(--aws-purple);
+    /* border: 3px solid var(--aws-purple); */
     transition: all var(--transition-normal);
 }
-
+.member-avatar img{
+    border: 3px solid var(--aws-purple);
+    border-radius: 50%;
+}
 .team-member:hover .member-avatar {
     border-color: var(--aws-purple-light);
     transform: scale(1.1);
