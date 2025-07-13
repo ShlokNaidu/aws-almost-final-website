@@ -1,1226 +1,2089 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AWS Cloud Club - Empowering Future Cloud Professionals</title>
-    <meta name="description" content="Join AWS Cloud Club to learn cloud computing, get AWS certifications, and build your career in cloud technology with hands-on workshops and expert mentorship.">
-    
+    <meta
+      name="description"
+      content="Join AWS Cloud Club to learn cloud computing, get AWS certifications, and build your career in cloud technology with hands-on workshops and expert mentorship."
+    />
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <!-- Loading Screen -->
     <div id="loader" class="loader">
-        <div class="loader-content">
-            <div class="loader-logo">
-                <div class="aws-logo">
-                    <span class="aws-text">AWS</span>
-                    <i class="fas fa-cloud cloud-icon"></i>
-                    <span class="aws-text">Club</span>
-                </div>
-            </div>
-            <p class="loader-text">Initializing Cloud Experience...</p>
-            <div class="loader-bar">
-                <div class="loader-progress"></div>
-            </div>
+      <div class="loader-content">
+        <div class="loader-logo">
+          <div class="aws-logo">
+            <span class="aws-text">AWS</span>
+            <i class="fas fa-cloud cloud-icon"></i>
+            <span class="aws-text">Club</span>
+          </div>
         </div>
-        <div class="loader-particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
+        <p class="loader-text">Initializing Cloud Experience...</p>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
         </div>
+      </div>
+      <div class="loader-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
     </div>
-
-   
 
     <!-- Main Content -->
     <div id="main" class="hidden">
-        <!-- Navigation -->
-        <nav id="navbar" class="navbar">
-            <div class="nav-container">
-                <a href="#home" class="nav-logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <span>AWS Cloud Club</span>
-                </a>
-                
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#events" class="nav-link">Events</a></li>
-                    <li><a href="#success" class="nav-link">Success</a></li>
-                    <li><a href="#alumni" class="nav-link">Alumni</a></li>
-                    <li><a href="#teams" class="nav-link">Teams</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                
-                <div class="nav-controls">
-                    <button id="theme-toggle" class="theme-toggle">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button id="mobile-menu-btn" class="mobile-menu-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
+      <!-- Navigation -->
+      <nav id="navbar" class="navbar">
+        <div class="nav-container">
+          <a href="#home" class="nav-logo">
+            <div class="logo-icon">
+              <i class="fas fa-cloud"></i>
             </div>
-            
-            <div id="mobile-menu" class="mobile-menu hidden">
-                <ul class="mobile-nav-links">
-                    <li><a href="#home" class="mobile-nav-link">Home</a></li>
-                    <li><a href="#about" class="mobile-nav-link">About</a></li>
-                    <li><a href="#events" class="mobile-nav-link">Events</a></li>
-                    <li><a href="#success" class="mobile-nav-link">Success</a></li>
-                    <li><a href="#alumni" class="mobile-nav-link">Alumni</a></li>
-                    <li><a href="#teams" class="mobile-nav-link">Teams</a></li>
-                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+            <span>AWS Cloud Club</span>
+          </a>
 
-         <!-- Event Announcement -->
-    <div id="event-announcement" class="event-announcement">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#events" class="nav-link">Events</a></li>
+            <li><a href="#success" class="nav-link">Success</a></li>
+            <li><a href="#alumni" class="nav-link">Alumni</a></li>
+            <li><a href="#teams" class="nav-link">Teams</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-controls">
+            <button id="theme-toggle" class="theme-toggle">
+              <i class="fas fa-moon"></i>
+            </button>
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu hidden">
+          <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#events" class="mobile-nav-link">Events</a></li>
+            <li><a href="#success" class="mobile-nav-link">Success</a></li>
+            <li><a href="#alumni" class="mobile-nav-link">Alumni</a></li>
+            <li><a href="#teams" class="mobile-nav-link">Teams</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Event Announcement -->
+      <div id="event-announcement" class="event-announcement">
         <div class="announcement-shimmer"></div>
         <div class="announcement-content">
-            <div class="announcement-main">
-                <div class="announcement-icon">
-                    <i class="fas fa-bell"></i>
-                </div>
-                <div class="announcement-text">
-                    <div class="announcement-title">🚀 AWS Cloud Workshop - December 15th!</div>
-                    <div class="announcement-description">Join our hands-on workshop on AWS fundamentals. Limited seats available!</div>
-                </div>
+          <div class="announcement-main">
+            <div class="announcement-icon">
+              <i class="fas fa-bell"></i>
             </div>
-            <div class="announcement-actions">
-                <a href="#events" class="announcement-btn primary">
-                    <i class="fas fa-calendar-plus"></i>
-                    Register Now
-                </a>
-                <button class="announcement-close" onclick="closeAnnouncement()">
-                    <i class="fas fa-times"></i>
-                </button>
+            <div class="announcement-text">
+              <div class="announcement-title">
+                🚀 AWS Cloud Workshop - December 15th!
+              </div>
+              <div class="announcement-description">
+                Join our hands-on workshop on AWS fundamentals. Limited seats
+                available!
+              </div>
             </div>
-        </div>
-    </div>
-
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-background">
-                <div class="hero-gradient"></div>
-                <div class="floating-elements">
-                    <div class="floating-element" style="--duration: 8s; --delay: 0s;"></div>
-                    <div class="floating-element" style="--duration: 12s; --delay: 2s;"></div>
-                    <div class="floating-element" style="--duration: 10s; --delay: 4s;"></div>
-                    <div class="floating-element" style="--duration: 14s; --delay: 1s;"></div>
-                    <div class="floating-element" style="--duration: 9s; --delay: 3s;"></div>
-                </div>
-            </div>
-            
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="hero-title">
-                        <span class="title-line">Welcome to</span>
-                        <span class="title-main typing-text">AWS Cloud Club</span>
-                        <span class="title-sub">Empowering Future Cloud Professionals</span>
-                    </div>
-                    
-                    <p class="hero-description">
-                        Join our vibrant community of cloud enthusiasts and embark on a journey to master Amazon Web Services. 
-                        Get hands-on experience, earn certifications, and build the skills that top tech companies are looking for.
-                    </p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#about" class="cta-button primary">
-                            <span class="btn-shine"></span>
-                            <i class="fas fa-rocket"></i>
-                            Start Your Journey
-                        </a>
-                        <a href="#events" class="cta-button secondary">
-                            <i class="fas fa-calendar"></i>
-                            View Events
-                        </a>
-                    </div>
-                    
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="500">0</span>
-                            <span class="stat-label">Active Members</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="50">0</span>
-                            <span class="stat-label">Workshops Conducted</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="200">0</span>
-                            <span class="stat-label">AWS Certifications</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="hero-visual">
-                    <div class="hero-image">
-                        <div class="image-container">
-                            <div class="aws-logo-large">
-                                <i class="fab fa-aws"></i>
-                            </div>
-                            <div class="orbit-elements">
-                                <div class="orbit-item" style="--angle: 0deg;">
-                                    <i class="fas fa-server"></i>
-                                </div>
-                                <div class="orbit-item" style="--angle: 72deg;">
-                                    <i class="fas fa-database"></i>
-                                </div>
-                                <div class="orbit-item" style="--angle: 144deg;">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div class="orbit-item" style="--angle: 216deg;">
-                                    <i class="fas fa-network-wired"></i>
-                                </div>
-                                <div class="orbit-item" style="--angle: 288deg;">
-                                    <i class="fas fa-cogs"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about scroll-animate">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About AWS Cloud Club</h2>
-                    <p class="section-subtitle">
-                        We're a community-driven organization dedicated to fostering cloud computing excellence 
-                        and preparing students for successful careers in the cloud industry.
-                    </p>
-                </div>
-                
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="about-card">
-                            <h3>
-                                <i class="fas fa-bullseye"></i>
-                                Our Mission
-                            </h3>
-                            <p>
-                                To democratize cloud education and create a pathway for students to become 
-                                cloud-ready professionals through hands-on learning, industry partnerships, 
-                                and real-world project experience.
-                            </p>
-                        </div>
-                        
-                        <div class="about-card">
-                            <h3>
-                                <i class="fas fa-eye"></i>
-                                Our Vision
-                            </h3>
-                            <p>
-                                To be the leading student organization that bridges the gap between academic 
-                                learning and industry requirements in cloud computing, producing job-ready 
-                                cloud professionals.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="about-image">
-                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                             alt="Students learning cloud computing" loading="lazy">
-                    </div>
-                </div>
-                
-                <!-- Pinterest-style Feature Grid -->
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h4>AWS Certifications</h4>
-                        <p>Get comprehensive preparation for AWS certification exams with our structured study groups, practice tests, and expert guidance. We've helped over 200 students achieve their AWS certifications.</p>
-                        <div class="feature-tags">
-                            <span class="feature-tag">Cloud Practitioner</span>
-                            <span class="feature-tag">Solutions Architect</span>
-                            <span class="feature-tag">Developer</span>
-                            <span class="feature-tag">SysOps</span>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h4>Hands-on Workshops</h4>
-                        <p>Participate in weekly hands-on workshops covering various AWS services and real-world scenarios.</p>
-                        <div class="feature-tags">
-                            <span class="feature-tag">EC2</span>
-                            <span class="feature-tag">S3</span>
-                            <span class="feature-tag">Lambda</span>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <h4>Real Projects</h4>
-                        <p>Work on industry-relevant projects that simulate real-world cloud architecture challenges. Build scalable applications, implement CI/CD pipelines, and deploy microservices on AWS infrastructure.</p>
-                        <div class="feature-tags">
-                            <span class="feature-tag">Full-Stack</span>
-                            <span class="feature-tag">DevOps</span>
-                            <span class="feature-tag">Microservices</span>
-                            <span class="feature-tag">Serverless</span>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                        </div>
-                        <h4>Expert Mentorship</h4>
-                        <p>Learn from industry professionals and AWS certified experts who provide personalized guidance and career advice.</p>
-                        <div class="feature-tags">
-                            <span class="feature-tag">1-on-1 Sessions</span>
-                            <span class="feature-tag">Career Guidance</span>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h4>Competitions</h4>
-                        <p>Participate in hackathons, cloud challenges, and AWS competitions to test your skills and win exciting prizes. Our members have won multiple national and international cloud computing competitions.</p>
-                        <div class="feature-tags">
-                            <span class="feature-tag">Hackathons</span>
-                            <span class="feature-tag">AWS Challenges</span>
-                            <span class="feature-tag">Innovation</span>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>Community Network</h4>
-                        <p>Connect with like-minded peers, alumni working in top tech companies, and build lasting professional relationships.</p>
-                        <div class="feature-tags">
-                            <span class="feature-tag">Networking</span>
-                            <span class="feature-tag">Alumni</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Partnership Section -->
-                <div class="partnership-section">
-                    <div class="partnership-background">Cloud Club</div>
-                    <div class="partnership-header">
-                        <div class="partnership-badge">Strategic Partnership</div>
-                        <h3 class="partnership-title">
-                            Powered by <span class="aws-text">AWS</span> & <span class="gfg-text">GeeksforGeeks</span>
-                        </h3>
-                        <p class="partnership-description">
-                            Our club is proudly supported by Amazon Web Services and GeeksforGeeks, bringing you the best of cloud education and programming excellence. This partnership ensures you get industry-standard training and resources.
-                        </p>
-                    </div>
-                    
-                    <div class="partnership-content">
-                        <div class="partner-logos">
-                            <div class="partner-logo-card aws-logo-card">
-                                <div class="partner-logo-icon">
-                                    <i class="fab fa-aws"></i>
-                                </div>
-                                <h4>Amazon Web Services</h4>
-                                <p>Cloud Computing Platform</p>
-                            </div>
-                            
-                            <div class="partner-logo-card gfg-logo-card">
-                                <div class="partner-logo-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <h4>GeeksforGeeks</h4>
-                                <p>Programming & Interview Prep</p>
-                            </div>
-                        </div>
-                        
-                        <div class="benefits-grid">
-                            <div class="benefit-card aws-benefit">
-                                <div class="benefit-icon">
-                                    <i class="fas fa-credit-card"></i>
-                                </div>
-                                <h4>AWS Credits & Resources</h4>
-                                <p>Access to AWS credits, training materials, and certification vouchers for hands-on learning experience.</p>
-                            </div>
-                            
-                            <div class="benefit-card gfg-benefit">
-                                <div class="benefit-icon">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <h4>GeeksforGeeks Premium</h4>
-                                <p>Exclusive access to GeeksforGeeks premium content, interview preparation, and coding challenges.</p>
-                            </div>
-                            
-                            <div class="benefit-card industry-benefit">
-                                <div class="benefit-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <h4>Industry Mentorship</h4>
-                                <p>Direct mentorship from AWS and GeeksforGeeks experts to guide your cloud computing journey.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Events Section -->
-        <section id="events" class="events scroll-animate">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Upcoming Events</h2>
-                    <p class="section-subtitle">
-                        Join our exciting workshops, seminars, and networking events designed to accelerate your cloud journey.
-                    </p>
-                </div>
-                
-                <div class="events-grid">
-                    <div class="event-card">
-                        <div class="event-image">
-                            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                                 alt="AWS Workshop" loading="lazy">
-                            <div class="event-overlay">
-                                <div class="event-date">Dec 15</div>
-                            </div>
-                        </div>
-                        <div class="event-content">
-                            <h3>AWS Fundamentals Workshop</h3>
-                            <p>
-                                A comprehensive hands-on workshop covering AWS core services including EC2, S3, RDS, and VPC. 
-                                Perfect for beginners looking to start their cloud journey.
-                            </p>
-                            <div class="event-tags">
-                                <span class="tag">Beginner</span>
-                                <span class="tag">Hands-on</span>
-                                <span class="tag">Free</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="event-card">
-                        <div class="event-image">
-                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                                 alt="Certification Bootcamp" loading="lazy">
-                            <div class="event-overlay">
-                                <div class="event-date">Dec 22</div>
-                            </div>
-                        </div>
-                        <div class="event-content">
-                            <h3>AWS Cloud Practitioner Bootcamp</h3>
-                            <p>
-                                Intensive 3-day bootcamp to prepare for the AWS Cloud Practitioner certification exam. 
-                                Includes practice tests and exam strategies.
-                            </p>
-                            <div class="event-tags">
-                                <span class="tag">Certification</span>
-                                <span class="tag">Bootcamp</span>
-                                <span class="tag">3 Days</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="event-card">
-                        <div class="event-image">
-                            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                                 alt="Industry Talk" loading="lazy">
-                            <div class="event-overlay">
-                                <div class="event-date">Jan 5</div>
-                            </div>
-                        </div>
-                        <div class="event-content">
-                            <h3>Industry Expert Talk: Cloud Career Paths</h3>
-                            <p>
-                                Join us for an insightful session with senior cloud architects from leading tech companies 
-                                discussing various career opportunities in cloud computing.
-                            </p>
-                            <div class="event-tags">
-                                <span class="tag">Career</span>
-                                <span class="tag">Expert Talk</span>
-                                <span class="tag">Networking</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Success Stories Section -->
-        <section id="success" class="success scroll-animate">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Success Stories</h2>
-                    <p class="section-subtitle">
-                        Discover how our members have transformed their careers through cloud computing expertise.
-                    </p>
-                </div>
-                
-                <div class="success-grid">
-                    <div class="success-card">
-                        <div class="success-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="success-content">
-                            <h3>Career Placements</h3>
-                            <p>
-                                Our members have secured positions at top tech companies including Amazon, Microsoft, 
-                                Google, and leading startups with competitive packages.
-                            </p>
-                            <div class="success-stat">95% Placement Rate</div>
-                        </div>
-                    </div>
-                    
-                    <div class="success-card">
-                        <div class="success-icon">
-                            <i class="fas fa-medal"></i>
-                        </div>
-                        <div class="success-content">
-                            <h3>AWS Certifications</h3>
-                            <p>
-                                Over 200 members have successfully obtained AWS certifications, with many achieving 
-                                multiple certifications across different domains.
-                            </p>
-                            <div class="success-stat">200+ Certified</div>
-                        </div>
-                    </div>
-                    
-                    <div class="success-card">
-                        <div class="success-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <div class="success-content">
-                            <h3>Startup Success</h3>
-                            <p>
-                                Several alumni have launched successful cloud-based startups, leveraging the skills 
-                                and network built during their time with the club.
-                            </p>
-                            <div class="success-stat">15+ Startups</div>
-                        </div>
-                    </div>
-                    
-                    <div class="success-card">
-                        <div class="success-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="success-content">
-                            <h3>Competition Wins</h3>
-                            <p>
-                                Our teams have won numerous hackathons and cloud computing competitions at national 
-                                and international levels, showcasing technical excellence.
-                            </p>
-                            <div class="success-stat">25+ Awards</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Alumni Section -->
-        <section id="alumni" class="alumni scroll-animate">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Our Alumni</h2>
-                    <p class="section-subtitle">
-                        Meet our successful alumni who are now leading cloud initiatives at top companies worldwide.
-                    </p>
-                </div>
-                
-                <div class="alumni-grid">
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                                 alt="Alumni 1" loading="lazy">
-                        </div>
-                        <div class="alumni-content">
-                            <h3>Sarah Johnson</h3>
-                            <div class="alumni-role">Senior Cloud Architect</div>
-                            <div class="alumni-company">Amazon Web Services</div>
-                            <p class="alumni-quote">
-                                The AWS Cloud Club provided me with the foundation and confidence to pursue a career in cloud computing. 
-                                The hands-on experience and mentorship were invaluable.
-                            </p>
-                            <div class="alumni-achievements">
-                                <span class="achievement">AWS Solutions Architect Professional</span>
-                                <span class="achievement">Team Lead</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                                 alt="Alumni 2" loading="lazy">
-                        </div>
-                        <div class="alumni-content">
-                            <h3>Michael Chen</h3>
-                            <div class="alumni-role">DevOps Engineer</div>
-                            <div class="alumni-company">Microsoft Azure</div>
-                            <p class="alumni-quote">
-                                Being part of the club opened doors to opportunities I never imagined. The practical projects 
-                                and industry connections made all the difference in my career.
-                            </p>
-                            <div class="alumni-achievements">
-                                <span class="achievement">Multi-Cloud Expert</span>
-                                <span class="achievement">Speaker</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="alumni-card">
-                        <div class="alumni-image">
-                            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                                 alt="Alumni 3" loading="lazy">
-                        </div>
-                        <div class="alumni-content">
-                            <h3>Emily Rodriguez</h3>
-                            <div class="alumni-role">Startup Founder & CEO</div>
-                            <div class="alumni-company">CloudTech Solutions</div>
-                            <p class="alumni-quote">
-                                The entrepreneurial spirit and technical skills I developed at the club helped me launch 
-                                my own cloud consulting company, which now serves Fortune 500 clients.
-                            </p>
-                            <div class="alumni-achievements">
-                                <span class="achievement">Entrepreneur</span>
-                                <span class="achievement">Industry Leader</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Teams Section -->
-        <section id="teams" class="teams scroll-animate">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Our Team</h2>
-                    <p class="section-subtitle">
-                        Meet the passionate individuals who make AWS Cloud Club a thriving community of learners and innovators.
-                    </p>
-                </div>
-                
-                <div class="team-year-toggle">
-                    <button class="year-btn active" data-year="current">Current Team</button>
-                    <button class="year-btn" data-year="previous">Previous Team</button>
-                </div>
-                
-                <!-- Current Team -->
-                <!-- Current Team Section -->
-<div id="current-team" class="team-year-content">
-    <h3 class="team-section-title">2025-2026 Leadership Team</h3>
-    <!-- Core Team (Leadership) -->
-    <div class="core-team">
-        <div class="core-members">
-            <div class="core-member">
-                <div class="member-image">
-                    <img src="https://via.placeholder.com/100x100?text=President" alt="President" loading="lazy">
-                </div>
-                <a href="#" style="text-decoration: none; outline: none; border: none;">
-                    <div class="member-info">
-                        <h4>Demo President</h4>
-                        <div class="member-role">President</div>
-                        <p class="member-description">
-                            Leads the club, oversees all activities, and represents the team at official events.
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="core-member">
-                <div class="member-image">
-                    <img src="https://via.placeholder.com/100x100?text=Vice+President" alt="Vice President" loading="lazy">
-                </div>
-                <a href="#" style="text-decoration: none; outline: none; border: none;">
-                    <div class="member-info">
-                        <h4>Demo Vice President</h4>
-                        <div class="member-role">Vice President</div>
-                        <p class="member-description">
-                            Assists the president, manages internal operations, and coordinates between departments.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Department Teams -->
-    <div class="department-teams">
-        <div class="team-tabs">
-            <button class="team-tab-btn active" data-team="technical">Technical Team</button>
-            <button class="team-tab-btn" data-team="events">Design and Graphics Department</button>
-            <button class="team-tab-btn" data-team="marketing">Content and Ideation Executive</button>
-            <button class="team-tab-btn" data-team="operations">Operations Team</button>
-            <button class="team-tab-btn" data-team="pr">PR Team</button>
-            <button class="team-tab-btn" data-team="socialmedia">Social Media Team</button>
-            <button class="team-tab-btn" data-team="photography">Photography Team</button>
-        </div>
-
-        <!-- Technical Team -->
-        <div id="technical-team" class="team-section active">
-            <div class="team-head">
-                <div class="head-image">
-                    <img src="https://via.placeholder.com/100x100?text=Tech+Head" alt="Demo Technical Head" loading="lazy">
-                </div>
-                <div class="head-info">
-                    <h4>Demo Technical Head</h4>
-                    <div class="head-role">Technical Head</div>
-                    <p class="head-description">Demo description for technical head.</p>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=Tech+1" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo Tech Member 1</h5>
-                    <p>Technical Executive</p>
-                </div>
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=Tech+2" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo Tech Member 2</h5>
-                    <p>Technical Executive</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Design and Graphics Department -->
-        <div id="events-team" class="team-section">
-            <div class="team-head">
-                <div class="head-image">
-                    <img src="https://via.placeholder.com/100x100?text=Design+Head" alt="Demo Design Head" loading="lazy">
-                </div>
-                <div class="head-info">
-                    <h4>Demo Design Head</h4>
-                    <div class="head-role">Design Head</div>
-                    <p class="head-description">Demo description for design head.</p>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=Design+1" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo Design Member 1</h5>
-                    <p>Designer</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Content and Ideation Executive -->
-        <div id="marketing-team" class="team-section">
-            <div class="team-head">
-                <div class="head-image">
-                    <img src="https://via.placeholder.com/100x100?text=Content+Head" alt="Demo Content Head" loading="lazy">
-                </div>
-                <div class="head-info">
-                    <h4>Demo Content Head</h4>
-                    <div class="head-role">Content Head</div>
-                    <p class="head-description">Demo description for content head.</p>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=Content+1" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo Content Member 1</h5>
-                    <p>Content Executive</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Operations Team -->
-        <div id="operations-team" class="team-section">
-            <div class="team-head">
-                <div class="head-image">
-                    <img src="https://via.placeholder.com/100x100?text=Ops+Head" alt="Demo Operations Head" loading="lazy">
-                </div>
-                <div class="head-info">
-                    <h4>Demo Operations Head</h4>
-                    <div class="head-role">Operations Head</div>
-                    <p class="head-description">Demo description for operations head.</p>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=Ops+1" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo Operations Member 1</h5>
-                    <p>Operations Executive</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- PR Team -->
-        <div id="pr-team" class="team-section">
-            <div class="team-head">
-                <div class="head-image">
-                    <img src="https://via.placeholder.com/100x100?text=PR+Head" alt="Demo PR Head" loading="lazy">
-                </div>
-                <div class="head-info">
-                    <h4>Demo PR Head</h4>
-                    <div class="head-role">PR Head</div>
-                    <p class="head-description">Demo description for PR head.</p>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=PR+1" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo PR Member 1</h5>
-                    <p>PR Executive</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Social Media Team -->
-        <div id="socialmedia-team" class="team-section">
-            <div class="team-head">
-                <div class="head-image">
-                    <img src="https://via.placeholder.com/100x100?text=Social+Head" alt="Demo Social Media Head" loading="lazy">
-                </div>
-                <div class="head-info">
-                    <h4>Demo Social Media Head</h4>
-                    <div class="head-role">Social Media Head</div>
-                    <p class="head-description">Demo description for social media head.</p>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=Social+1" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo Social Media Member 1</h5>
-                    <p>Social Media Executive</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Photography Team -->
-        <div id="photography-team" class="team-section">
-            <div class="team-head">
-                <div class="head-image">
-                    <img src="https://via.placeholder.com/100x100?text=Photo+Head" alt="Demo Photography Head" loading="lazy">
-                </div>
-                <div class="head-info">
-                    <h4>Demo Photography Head</h4>
-                    <div class="head-role">Photography Head</div>
-                    <p class="head-description">Demo description for photography head.</p>
-                </div>
-            </div>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="https://via.placeholder.com/80x80?text=Photo+1" alt="Demo Member" loading="lazy">
-                    </div>
-                    <h5>Demo Photography Member 1</h5>
-                    <p>Photography Executive</p>
-                </div>
-            </div>
-        </div>
-    </div> <!-- Close department-teams div -->
-</div>
-                
-                <!-- Previous Team -->
-                <div id="previous-team" class="team-year-content hidden">
-                    <h3 class="team-section-title">2023-2024 Leadership Team</h3>
-                    
-                    <!-- Previous Core Team -->
-                    <div class="core-team">
-                        <div class="core-members">
-                            <div class="core-member">
-                                <div class="member-image">
-                                    <img src="profiles/old/anekant.jpg" 
-                                         alt="Former President" loading="lazy">
-                                </div>
-                                <a href="https://www.linkedin.com/in/anekantjain01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="text-decoration: none; outline: none; border: none;"><div class="member-info">
-                                    <h4>Anekant Jain</h4>
-                                    <div class="member-role">Former President</div>
-                                    <p class="member-description">
-                                        Led the club through significant growth, establishing key partnerships and 
-                                        launching the certification program. Now working as Cloud Engineer at Google.
-                                    </p>
-                                </div></a>
-                            </div>
-                            
-                            <div class="core-member">
-                                <div class="member-image">
-                                    <img src="profiles/old/lochan.jpg" 
-                                         alt="Former Vice President" loading="lazy">
-                                </div>
-                                <a href="https://www.linkedin.com/in/lochan-vaidya-20899425a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="text-decoration: none">
-                                    <div class="member-info">
-                                    <h4>Lochan Vaidya</h4>
-                                    <div class="member-role">Former Vice President</div>
-                                    <p class="member-description">
-                                        Instrumental in developing the club's technical curriculum and workshop series. 
-                                        Currently pursuing AWS Solutions Architect Professional certification.
-                                    </p>
-                                </div></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Previous Department Teams -->
-                    <div class="department-teams">
-                        <div class="team-tabs">
-                            <button class="team-tab-btn active" data-team="technical">Technical Team</button>
-                            <button class="team-tab-btn" data-team="events">Design and Graphics Department</button>
-                            <button class="team-tab-btn" data-team="marketing">Content and Ideation Executive</button>
-                            <button class="team-tab-btn" data-team="operations">Operations Team</button>
-                            <button class="team-tab-btn" data-team="pr">PR Team</button>
-                            <button class="team-tab-btn" data-team="socialmedia">Social Media Team</button>
-                            <button class="team-tab-btn" data-team="photography">Photography Team</button>
-                        </div>
-
-                        <!-- Previous Technical Team -->
-                        <div id="previous-technical-team" class="team-section active">
-                            <div class="team-head">
-                                <div class="head-image">
-                                    <img src="https://via.placeholder.com/100x100?text=Demo" alt="Demo Technical Head" loading="lazy">
-                                </div>
-                                <div class="head-info">
-                                    <h4>Demo Technical Head</h4>
-                                    <div class="head-role">Technical Head</div>
-                                    <p class="head-description">Demo description for previous technical head.</p>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo Tech Member 1</h5>
-                                    <p>Technical Executive</p>
-                                </div>
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo Tech Member 2</h5>
-                                    <p>Technical Executive</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Previous Design and Graphics Department -->
-                        <div id="previous-events-team" class="team-section">
-                            <div class="team-head">
-                                <div class="head-image">
-                                    <img src="https://via.placeholder.com/100x100?text=Demo" alt="Demo Design Head" loading="lazy">
-                                </div>
-                                <div class="head-info">
-                                    <h4>Demo Design Head</h4>
-                                    <div class="head-role">Design Head</div>
-                                    <p class="head-description">Demo description for previous design head.</p>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo Design Member 1</h5>
-                                    <p>Designer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Previous Content and Ideation Executive -->
-                        <div id="previous-marketing-team" class="team-section">
-                            <div class="team-head">
-                                <div class="head-image">
-                                    <img src="https://via.placeholder.com/100x100?text=Demo" alt="Demo Content Head" loading="lazy">
-                                </div>
-                                <div class="head-info">
-                                    <h4>Demo Content Head</h4>
-                                    <div class="head-role">Content Head</div>
-                                    <p class="head-description">Demo description for previous content head.</p>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo Content Member 1</h5>
-                                    <p>Content Executive</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Previous Operations Team -->
-                        <div id="previous-operations-team" class="team-section">
-                            <div class="team-head">
-                                <div class="head-image">
-                                    <img src="https://via.placeholder.com/100x100?text=Demo" alt="Demo Operations Head" loading="lazy">
-                                </div>
-                                <div class="head-info">
-                                    <h4>Demo Operations Head</h4>
-                                    <div class="head-role">Operations Head</div>
-                                    <p class="head-description">Demo description for previous operations head.</p>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo Operations Member 1</h5>
-                                    <p>Operations Executive</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Previous PR Team -->
-                        <div id="previous-pr-team" class="team-section">
-                            <div class="team-head">
-                                <div class="head-image">
-                                    <img src="https://via.placeholder.com/100x100?text=Demo" alt="Demo PR Head" loading="lazy">
-                                </div>
-                                <div class="head-info">
-                                    <h4>Demo PR Head</h4>
-                                    <div class="head-role">PR Head</div>
-                                    <p class="head-description">Demo description for previous PR head.</p>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo PR Member 1</h5>
-                                    <p>PR Executive</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Previous Social Media Team -->
-                        <div id="previous-socialmedia-team" class="team-section">
-                            <div class="team-head">
-                                <div class="head-image">
-                                    <img src="https://via.placeholder.com/100x100?text=Demo" alt="Demo Social Media Head" loading="lazy">
-                                </div>
-                                <div class="head-info">
-                                    <h4>Demo Social Media Head</h4>
-                                    <div class="head-role">Social Media Head</div>
-                                    <p class="head-description">Demo description for previous social media head.</p>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo Social Media Member 1</h5>
-                                    <p>Social Media Executive</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Previous Photography Team -->
-                        <div id="previous-photography-team" class="team-section">
-                            <div class="team-head">
-                                <div class="head-image">
-                                    <img src="https://via.placeholder.com/100x100?text=Demo" alt="Demo Photography Head" loading="lazy">
-                                </div>
-                                <div class="head-info">
-                                    <h4>Demo Photography Head</h4>
-                                    <div class="head-role">Photography Head</div>
-                                    <p class="head-description">Demo description for previous photography head.</p>
-                                </div>
-                            </div>
-                            <div class="team-members">
-                                <div class="team-member">
-                                    <div class="member-avatar">
-                                        <img src="https://via.placeholder.com/80x80?text=Demo" alt="Demo Member" loading="lazy">
-                                    </div>
-                                    <h5>Demo Photography Member 1</h5>
-                                    <p>Photography Executive</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Floating Team Toggle Button -->
-            <button id="teamToggleBtn" class="team-toggle-btn">
-                <i class="fas fa-users"></i>
-                View Previous Team
+          </div>
+          <div class="announcement-actions">
+            <a href="#events" class="announcement-btn primary">
+              <i class="fas fa-calendar-plus"></i>
+              Register Now
+            </a>
+            <button class="announcement-close" onclick="closeAnnouncement()">
+              <i class="fas fa-times"></i>
             </button>
-        </section>
+          </div>
+        </div>
+      </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact scroll-animate">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="section-subtitle">
-                        Ready to start your cloud journey? Connect with us and become part of our amazing community.
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-background">
+          <div class="hero-gradient"></div>
+          <div class="floating-elements">
+            <div
+              class="floating-element"
+              style="--duration: 8s; --delay: 0s"
+            ></div>
+            <div
+              class="floating-element"
+              style="--duration: 12s; --delay: 2s"
+            ></div>
+            <div
+              class="floating-element"
+              style="--duration: 10s; --delay: 4s"
+            ></div>
+            <div
+              class="floating-element"
+              style="--duration: 14s; --delay: 1s"
+            ></div>
+            <div
+              class="floating-element"
+              style="--duration: 9s; --delay: 3s"
+            ></div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-title">
+              <span class="title-line">Welcome to</span>
+              <span class="title-main typing-text">AWS Cloud Club</span>
+              <span class="title-sub"
+                >Empowering Future Cloud Professionals</span
+              >
+            </div>
+
+            <p class="hero-description">
+              Join our vibrant community of cloud enthusiasts and embark on a
+              journey to master Amazon Web Services. Get hands-on experience,
+              earn certifications, and build the skills that top tech companies
+              are looking for.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#about" class="cta-button primary">
+                <span class="btn-shine"></span>
+                <i class="fas fa-rocket"></i>
+                Start Your Journey
+              </a>
+              <a href="#events" class="cta-button secondary">
+                <i class="fas fa-calendar"></i>
+                View Events
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Active Members</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="50">0</span>
+                <span class="stat-label">Workshops Conducted</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="200">0</span>
+                <span class="stat-label">AWS Certifications</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image">
+              <div class="image-container">
+                <div class="aws-logo-large">
+                  <i class="fab fa-aws"></i>
+                </div>
+                <div class="orbit-elements">
+                  <div class="orbit-item" style="--angle: 0deg">
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <div class="orbit-item" style="--angle: 72deg">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <div class="orbit-item" style="--angle: 144deg">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="orbit-item" style="--angle: 216deg">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                  <div class="orbit-item" style="--angle: 288deg">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about scroll-animate">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About AWS Cloud Club</h2>
+            <p class="section-subtitle">
+              We're a community-driven organization dedicated to fostering cloud
+              computing excellence and preparing students for successful careers
+              in the cloud industry.
+            </p>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text">
+              <div class="about-card">
+                <h3>
+                  <i class="fas fa-bullseye"></i>
+                  Our Mission
+                </h3>
+                <p>
+                  To democratize cloud education and create a pathway for
+                  students to become cloud-ready professionals through hands-on
+                  learning, industry partnerships, and real-world project
+                  experience.
+                </p>
+              </div>
+
+              <div class="about-card">
+                <h3>
+                  <i class="fas fa-eye"></i>
+                  Our Vision
+                </h3>
+                <p>
+                  To be the leading student organization that bridges the gap
+                  between academic learning and industry requirements in cloud
+                  computing, producing job-ready cloud professionals.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-image">
+              <img
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Students learning cloud computing"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Pinterest-style Feature Grid -->
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h4>AWS Certifications</h4>
+              <p>
+                Get comprehensive preparation for AWS certification exams with
+                our structured study groups, practice tests, and expert
+                guidance. We've helped over 200 students achieve their AWS
+                certifications.
+              </p>
+              <div class="feature-tags">
+                <span class="feature-tag">Cloud Practitioner</span>
+                <span class="feature-tag">Solutions Architect</span>
+                <span class="feature-tag">Developer</span>
+                <span class="feature-tag">SysOps</span>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h4>Hands-on Workshops</h4>
+              <p>
+                Participate in weekly hands-on workshops covering various AWS
+                services and real-world scenarios.
+              </p>
+              <div class="feature-tags">
+                <span class="feature-tag">EC2</span>
+                <span class="feature-tag">S3</span>
+                <span class="feature-tag">Lambda</span>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h4>Real Projects</h4>
+              <p>
+                Work on industry-relevant projects that simulate real-world
+                cloud architecture challenges. Build scalable applications,
+                implement CI/CD pipelines, and deploy microservices on AWS
+                infrastructure.
+              </p>
+              <div class="feature-tags">
+                <span class="feature-tag">Full-Stack</span>
+                <span class="feature-tag">DevOps</span>
+                <span class="feature-tag">Microservices</span>
+                <span class="feature-tag">Serverless</span>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <h4>Expert Mentorship</h4>
+              <p>
+                Learn from industry professionals and AWS certified experts who
+                provide personalized guidance and career advice.
+              </p>
+              <div class="feature-tags">
+                <span class="feature-tag">1-on-1 Sessions</span>
+                <span class="feature-tag">Career Guidance</span>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h4>Competitions</h4>
+              <p>
+                Participate in hackathons, cloud challenges, and AWS
+                competitions to test your skills and win exciting prizes. Our
+                members have won multiple national and international cloud
+                computing competitions.
+              </p>
+              <div class="feature-tags">
+                <span class="feature-tag">Hackathons</span>
+                <span class="feature-tag">AWS Challenges</span>
+                <span class="feature-tag">Innovation</span>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Community Network</h4>
+              <p>
+                Connect with like-minded peers, alumni working in top tech
+                companies, and build lasting professional relationships.
+              </p>
+              <div class="feature-tags">
+                <span class="feature-tag">Networking</span>
+                <span class="feature-tag">Alumni</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Partnership Section -->
+          <div class="partnership-section">
+            <div class="partnership-background">Cloud Club</div>
+            <div class="partnership-header">
+              <div class="partnership-badge">Strategic Partnership</div>
+              <h3 class="partnership-title">
+                Powered by <span class="aws-text">AWS</span> &
+                <span class="gfg-text">GeeksforGeeks</span>
+              </h3>
+              <p class="partnership-description">
+                Our club is proudly supported by Amazon Web Services and
+                GeeksforGeeks, bringing you the best of cloud education and
+                programming excellence. This partnership ensures you get
+                industry-standard training and resources.
+              </p>
+            </div>
+
+            <div class="partnership-content">
+              <div class="partner-logos">
+                <div class="partner-logo-card aws-logo-card">
+                  <div class="partner-logo-icon">
+                    <i class="fab fa-aws"></i>
+                  </div>
+                  <h4>Amazon Web Services</h4>
+                  <p>Cloud Computing Platform</p>
+                </div>
+
+                <div class="partner-logo-card gfg-logo-card">
+                  <div class="partner-logo-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <h4>GeeksforGeeks</h4>
+                  <p>Programming & Interview Prep</p>
+                </div>
+              </div>
+
+              <div class="benefits-grid">
+                <div class="benefit-card aws-benefit">
+                  <div class="benefit-icon">
+                    <i class="fas fa-credit-card"></i>
+                  </div>
+                  <h4>AWS Credits & Resources</h4>
+                  <p>
+                    Access to AWS credits, training materials, and certification
+                    vouchers for hands-on learning experience.
+                  </p>
+                </div>
+
+                <div class="benefit-card gfg-benefit">
+                  <div class="benefit-icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <h4>GeeksforGeeks Premium</h4>
+                  <p>
+                    Exclusive access to GeeksforGeeks premium content, interview
+                    preparation, and coding challenges.
+                  </p>
+                </div>
+
+                <div class="benefit-card industry-benefit">
+                  <div class="benefit-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <h4>Industry Mentorship</h4>
+                  <p>
+                    Direct mentorship from AWS and GeeksforGeeks experts to
+                    guide your cloud computing journey.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section id="events" class="events scroll-animate">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Upcoming Events</h2>
+            <p class="section-subtitle">
+              Join our exciting workshops, seminars, and networking events
+              designed to accelerate your cloud journey.
+            </p>
+          </div>
+
+          <div class="events-grid">
+            <div class="event-card">
+              <div class="event-image">
+                <img
+                  src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="AWS Workshop"
+                  loading="lazy"
+                />
+                <div class="event-overlay">
+                  <div class="event-date">Dec 15</div>
+                </div>
+              </div>
+              <div class="event-content">
+                <h3>AWS Fundamentals Workshop</h3>
+                <p>
+                  A comprehensive hands-on workshop covering AWS core services
+                  including EC2, S3, RDS, and VPC. Perfect for beginners looking
+                  to start their cloud journey.
+                </p>
+                <div class="event-tags">
+                  <span class="tag">Beginner</span>
+                  <span class="tag">Hands-on</span>
+                  <span class="tag">Free</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <div class="event-image">
+                <img
+                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Certification Bootcamp"
+                  loading="lazy"
+                />
+                <div class="event-overlay">
+                  <div class="event-date">Dec 22</div>
+                </div>
+              </div>
+              <div class="event-content">
+                <h3>AWS Cloud Practitioner Bootcamp</h3>
+                <p>
+                  Intensive 3-day bootcamp to prepare for the AWS Cloud
+                  Practitioner certification exam. Includes practice tests and
+                  exam strategies.
+                </p>
+                <div class="event-tags">
+                  <span class="tag">Certification</span>
+                  <span class="tag">Bootcamp</span>
+                  <span class="tag">3 Days</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <div class="event-image">
+                <img
+                  src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Industry Talk"
+                  loading="lazy"
+                />
+                <div class="event-overlay">
+                  <div class="event-date">Jan 5</div>
+                </div>
+              </div>
+              <div class="event-content">
+                <h3>Industry Expert Talk: Cloud Career Paths</h3>
+                <p>
+                  Join us for an insightful session with senior cloud architects
+                  from leading tech companies discussing various career
+                  opportunities in cloud computing.
+                </p>
+                <div class="event-tags">
+                  <span class="tag">Career</span>
+                  <span class="tag">Expert Talk</span>
+                  <span class="tag">Networking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Success Stories Section -->
+      <section id="success" class="success scroll-animate">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Success Stories</h2>
+            <p class="section-subtitle">
+              Discover how our members have transformed their careers through
+              cloud computing expertise.
+            </p>
+          </div>
+
+          <div class="success-grid">
+            <div class="success-card">
+              <div class="success-icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="success-content">
+                <h3>Career Placements</h3>
+                <p>
+                  Our members have secured positions at top tech companies
+                  including Amazon, Microsoft, Google, and leading startups with
+                  competitive packages.
+                </p>
+                <div class="success-stat">95% Placement Rate</div>
+              </div>
+            </div>
+
+            <div class="success-card">
+              <div class="success-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="success-content">
+                <h3>AWS Certifications</h3>
+                <p>
+                  Over 200 members have successfully obtained AWS
+                  certifications, with many achieving multiple certifications
+                  across different domains.
+                </p>
+                <div class="success-stat">200+ Certified</div>
+              </div>
+            </div>
+
+            <div class="success-card">
+              <div class="success-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="success-content">
+                <h3>Startup Success</h3>
+                <p>
+                  Several alumni have launched successful cloud-based startups,
+                  leveraging the skills and network built during their time with
+                  the club.
+                </p>
+                <div class="success-stat">15+ Startups</div>
+              </div>
+            </div>
+
+            <div class="success-card">
+              <div class="success-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="success-content">
+                <h3>Competition Wins</h3>
+                <p>
+                  Our teams have won numerous hackathons and cloud computing
+                  competitions at national and international levels, showcasing
+                  technical excellence.
+                </p>
+                <div class="success-stat">25+ Awards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alumni Section -->
+      <section id="alumni" class="alumni scroll-animate">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Our Alumni</h2>
+            <p class="section-subtitle">
+              Meet our successful alumni who are now leading cloud initiatives
+              at top companies worldwide.
+            </p>
+          </div>
+
+          <div class="alumni-grid">
+            <div class="alumni-card">
+              <div class="alumni-image">
+                <img
+                  src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Alumni 1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="alumni-content">
+                <h3>Sarah Johnson</h3>
+                <div class="alumni-role">Senior Cloud Architect</div>
+                <div class="alumni-company">Amazon Web Services</div>
+                <p class="alumni-quote">
+                  The AWS Cloud Club provided me with the foundation and
+                  confidence to pursue a career in cloud computing. The hands-on
+                  experience and mentorship were invaluable.
+                </p>
+                <div class="alumni-achievements">
+                  <span class="achievement"
+                    >AWS Solutions Architect Professional</span
+                  >
+                  <span class="achievement">Team Lead</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="alumni-card">
+              <div class="alumni-image">
+                <img
+                  src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Alumni 2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="alumni-content">
+                <h3>Michael Chen</h3>
+                <div class="alumni-role">DevOps Engineer</div>
+                <div class="alumni-company">Microsoft Azure</div>
+                <p class="alumni-quote">
+                  Being part of the club opened doors to opportunities I never
+                  imagined. The practical projects and industry connections made
+                  all the difference in my career.
+                </p>
+                <div class="alumni-achievements">
+                  <span class="achievement">Multi-Cloud Expert</span>
+                  <span class="achievement">Speaker</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="alumni-card">
+              <div class="alumni-image">
+                <img
+                  src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Alumni 3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="alumni-content">
+                <h3>Emily Rodriguez</h3>
+                <div class="alumni-role">Startup Founder & CEO</div>
+                <div class="alumni-company">CloudTech Solutions</div>
+                <p class="alumni-quote">
+                  The entrepreneurial spirit and technical skills I developed at
+                  the club helped me launch my own cloud consulting company,
+                  which now serves Fortune 500 clients.
+                </p>
+                <div class="alumni-achievements">
+                  <span class="achievement">Entrepreneur</span>
+                  <span class="achievement">Industry Leader</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teams Section -->
+      <section id="teams" class="teams scroll-animate">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">
+              Meet the passionate individuals who make AWS Cloud Club a thriving
+              community of learners and innovators.
+            </p>
+          </div>
+
+          <div class="team-year-toggle">
+            <button class="year-btn active" data-year="current">
+              Current Team
+            </button>
+            <button class="year-btn" data-year="previous">Previous Team</button>
+          </div>
+
+          <!-- Current Team -->
+          <!-- Current Team Section -->
+          <!-- Current Team -->
+          <div id="current-team" class="team-year-content">
+            <h3 class="team-section-title">2024-2025 Leadership Team</h3>
+
+            <!-- Core Team -->
+            <div class="core-team">
+              <div class="core-members">
+                <div class="core-member">
+                  <div class="member-image">
+                    <img
+                      src="profiles/old/shivam-verma.jpg"
+                      alt="President"
+                      loading="lazy"
+                      style="object-fit: cover; object-position: top;"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Shivam Verma</h4>
+                    <div class="member-role">President</div>
+                    <p class="member-description">
+                      Computer Science senior with 3 AWS certifications and
+                      internship experience at AWS. Passionate about cloud
+                      architecture and leading the club's strategic initiatives.
                     </p>
+                  </div>
                 </div>
-                
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <h3>Email Us</h3>
-                            <p>Have questions or want to join? Send us an email and we'll get back to you within 24 hours.</p>
-                            <a href="mailto:contact@awscloudclub.edu" class="contact-link">
-                                <i class="fas fa-paper-plane"></i>
-                                contact@awscloudclub.edu
-                            </a>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fab fa-discord"></i>
-                            </div>
-                            <h3>Join Our Discord</h3>
-                            <p>Connect with fellow members, get help with projects, and stay updated on all club activities.</p>
-                            <a href="#" class="contact-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                Join Discord Server
-                            </a>
-                        </div>
-                        
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h3>Visit Us</h3>
-                            <p>Find us at our weekly meetings every Friday at 6 PM in the Computer Science building.</p>
-                            <a href="#" class="contact-link">
-                                <i class="fas fa-directions"></i>
-                                Get Directions
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="cta-section">
-                        <div class="cta-content">
-                            <h3>Ready to Transform Your Career?</h3>
-                            <p>
-                                Join hundreds of students who have already started their cloud computing journey with us. 
-                                Whether you're a complete beginner or looking to advance your skills, we have something for everyone.
-                            </p>
-                            <div class="cta-buttons">
-                                <a href="#" class="cta-button primary">
-                                    <i class="fas fa-user-plus"></i>
-                                    Join the Club
-                                </a>
-                                <a href="#events" class="cta-button secondary">
-                                    <i class="fas fa-calendar-check"></i>
-                                    Attend Next Event
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <div class="footer-logo">
-                            <div class="logo-icon">
-                                <i class="fas fa-cloud"></i>
-                            </div>
-                            <span>AWS Cloud Club</span>
-                        </div>
-                        <p class="footer-description">
-                            Empowering the next generation of cloud professionals through hands-on learning, 
-                            industry partnerships, and a supportive community of learners and innovators.
-                        </p>
-                        <div class="social-links">
-                            <a href="#" class="social-link">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="fab fa-discord"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul class="footer-links">
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#teams">Our Team</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Resources</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">AWS Free Tier</a></li>
-                            <li><a href="#">Certification Guide</a></li>
-                            <li><a href="#">Learning Path</a></li>
-                            <li><a href="#">Project Gallery</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Community</h4>
-                        <ul class="footer-links">
-                            <li><a href="#">Discord Server</a></li>
-                            <li><a href="#">Study Groups</a></li>
-                            <li><a href="#">Mentorship</a></li>
-                            <li><a href="#">Alumni Network</a></li>
-                        </ul>
-                    </div>
+                <div class="core-member">
+                  <div class="member-image">
+                    <img
+                      src="profiles/old/tanish-mishra.jpg"
+                      alt="Vice President"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="member-info">
+                    <h4>Tanish Mishra</h4>
+                    <div class="member-role">Vice President</div>
+                    <p class="member-description">
+                      Information Systems major specializing in cloud security.
+                      Leads our certification preparation programs and maintains
+                      partnerships with industry professionals.
+                    </p>
+                  </div>
                 </div>
-                
-                <div class="footer-bottom">
-                    <p>&copy; 2024 AWS Cloud Club. All rights reserved.</p>
-                    <p>Powered by AWS and GeeksforGeeks</p>
-                </div>
+              </div>
             </div>
-        </footer>
+
+            <!-- Department Teams -->
+            <div class="department-teams">
+              <div class="team-tabs">
+                <button class="team-tab-btn active" data-team="technical">
+                  Technical Team
+                </button>
+                <button class="team-tab-btn" data-team="events">
+                  Design and Graphics Department
+                </button>
+                <button class="team-tab-btn" data-team="marketing">
+                  Content and Ideation Executive
+                </button>
+                <button class="team-tab-btn" data-team="operations">
+                  Operations Team
+                </button>
+                <button class="team-tab-btn" data-team="pr">PR Team</button>
+                <button class="team-tab-btn" data-team="socialmedia">
+                  Social Media Team
+                </button>
+                <button class="team-tab-btn" data-team="photography">
+                  Photography Team
+                </button>
+              </div>
+              <div id="technical-team" class="team-section active">
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="profiles/new/Shubham Mehta.jpg"
+                      alt="Technical Head"
+                      loading="lazy"
+                      style="object-fit:cover;object-position: top;"     
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Shubham Mehta</h4>
+                    <div class="head-role">Technical Head</div>
+                    <p class="head-description">
+                      Leads workshop development and technical content creation.
+                      Expert in serverless architectures and DevOps practices.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-members">
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Huzefa Darugar.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Huzefa Darugar wala</h5>
+                    <p>Data science Mentor</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/DEVANSH SENGAR.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Devansh Singh Sengar</h5>
+                    <p>Cyber Secruity Mentor</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/salaj anjane.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Salaj Anjane</h5>
+                    <p>Technical Executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Shlok Naidu.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Shlok Naidu</h5>
+                    <p>Technical Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/vedant-2.jpeg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Vedant Singh Kushwah</h5>
+                    <p>Technical Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Nandini Patel.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Nandini Patel</h5>
+                    <p>Technical Executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Aarya Saraf.jpeg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Aarya Saraf</h5>
+                    <p>Technical Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Ananya Vani.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Ananya Vani</h5>
+                    <p>Technical Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Aarjav Jain.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Aarjav Jain</h5>
+                    <p>Technical Executive</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Events Team -->
+              <div id="events-team" class="team-section">
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="/profiles/new/Aanushka Sharma.jpg"
+                      alt="Events Head"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Aanushka Sharma</h4>
+                    <div class="head-role">Graphics Head</div>
+                    <p class="head-description">
+                      "Leads the visual identity of the club by creating
+                      engaging graphics and designs for events, promotions, and
+                      social media."
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-members">
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="/profiles/new/Raina Sharma.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Raina Sharma</h5>
+                    <p>Graphics Executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="/profiles/new/Sneha Swarnkar(1).jpg"
+                        alt="Member"
+                        loading="lazy"
+                        style="object-fit:cover;object-position: top;" 
+                      />
+                    </div>
+                    <h5>Sneha Swarnkar</h5>
+                    <p>Graphics Executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="/profiles/new/Aashi Dubey.png"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Aashi Dubey</h5>
+                    <p>Graphics Executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="/profiles/new/Aditya Rajpoot.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Aditya rajpoot</h5>
+                    <p>Graphics Executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="/profiles/new/Ronak Joshi.jpeg"
+                        alt="Member"
+                        loading="lazy"
+                        style="object-fit:cover;object-position:right;"
+                      />
+                    </div>
+                    <h5>Ronak Joshi</h5>
+                    <p>Graphics Executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="/profiles/new/Sakina Hashmi.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Sakina Hashmi</h5>
+                    <p>Graphics Executive</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content and Ideation executive  // marketing ko change kra hai -->
+              <div id="marketing-team" class="team-section">
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="/profiles/old/mannat.jpg"
+                      alt="Marketing Head"
+                      loading="lazy"
+                      style="object-fit:cover;object-position: top;"
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Mannat Bhatia</h4>
+                    <div class="head-role">Content and Ideation Head</div>
+                    <p class="head-description">
+                      Leads the creation of impactful content that reflects the
+                      club’s vision across all platforms.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-members">
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Vinti Jethwani.jpg"
+                        alt="Member"
+                        loading="lazy"
+                        style="object-fit:cover;object-position: top;"  
+                      />
+                    </div>
+                    <h5>Vinti Jethwani</h5>
+                    <p>Content and ideation executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Ankita Dubey.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Ankita Dubey</h5>
+                    <p>Content and ideation executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Shreyasi Kathait.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Shreyasi Kathait</h5>
+                    <p>Content and ideation executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Harshali Mendake.jpeg "
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Harshali Mendake</h5>
+                    <p>Content and ideation executive</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Operations Team -->
+              <div id="operations-team" class="team-section">
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="profiles/new/Shantanu Karkare.JPG"
+                      alt="Operations Head"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Shantanu Karkare</h4>
+                    <div class="head-role">Operations and Management Head</div>
+                    <p class="head-description">
+                      "Ensures smooth execution of all club activities through
+                      efficient planning and coordination."
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-members">
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/old/tanuj raghuvanshi.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Tanuj Raghuwanshi</h5>
+                    <p>Operation and Management Co-Head</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Rituraj Kourav.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Rituraj Kourav</h5>
+                    <p>Operation and management executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/NAVDHA CHOUDHARY.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Navdha Choudhary</h5>
+                    <p>Operation and management executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Srashti Chouhan.jpg"
+                        alt="Member"
+                        loading="lazy"
+                        style="object-fit:cover;object-position:top;"
+                      />
+                    </div>
+                    <h5>Srashti Chouhan</h5>
+                    <p>Operation and management executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/ADITYA DUBEY.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Aditya Dubey</h5>
+                    <p>Operation and management executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Vinayak Pal.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Vinayak Pal</h5>
+                    <p>Operation and management executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Kanak Holkar.jpeg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Kanak Holkar</h5>
+                    <p>Operation and management executive</p>
+                  </div>
+
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Ayush Chouksey.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Ayush chouksey</h5>
+                    <p>Operation and management executive</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PR Team -->
+              <div id="pr-team" class="team-section">
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="profiles/new/Pawni majawadia.jpg"
+                      alt="PR Head"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Pawni Majawadia</h4>
+                    <div class="head-role">PR Head</div>
+                    <p class="head-description">
+                      Led public relations and outreach for the club, building
+                      connections with external organizations and media.
+                    </p>
+                  </div>
+                </div>
+                <div class="team-members">
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/- ANANYA GUPTA.jpgpr"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Ananya Gupta</h5>
+                    <p>PR Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Avnika Chouhan.jpg"
+                        alt="Member"
+                        loading="lazy"
+                        style="object-fit:cover;object-position: top;"
+                      />
+                    </div>
+                    <h5>Avnika Chouhan</h5>
+                    <p>PR Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Siddhi Bordia.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Siddhi Bordia</h5>
+                    <p>PR Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="#"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Vansh Singh</h5>
+                    <p>PR Executive</p>
+                  </div>
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Vedika Rathore.jpg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Vedika rathore</h5>
+                    <p>PR Executive</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media Team -->
+              <div id="socialmedia-team" class="team-section">
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="profiles/new/VIDHI TIWARI.jpeg"
+                      alt="Social Media Head"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Vidhi Tiwari</h4>
+                    <div class="head-role">Social Media Head</div>
+                    <p class="head-description">
+                      Managed the club's social media presence and digital
+                      engagement strategies.
+                    </p>
+                  </div>
+                </div>
+                <div class="team-members">
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Tanvi Patil.jpg"
+                        alt="Member"
+                        loading="lazy"
+                        style="object-fit:cover;object-position: top;"
+                      />
+                    </div>
+                    <h5>Tanvi Patil</h5>
+                    <p>Social Media Executive</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Photography Team -->
+              <div id="photography-team" class="team-section">
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="profiles/new/Sumit Mahato.jpeg"
+                      alt="Photography Head"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Sumit Mahato</h4>
+                    <div class="head-role">Photography Head</div>
+                    <p class="head-description">
+                      Captured all the memorable moments of the club's events
+                      and activities.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-head">
+                  <div class="head-image">
+                    <img
+                      src="profiles/new/Pradyumna Jogdand.jpg"
+                      alt="Photography Head"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="head-info">
+                    <h4>Pradyumna Jogdand</h4>
+                    <div class="head-role">Videography Head</div>
+                    <p class="head-description">
+                      Capturing every frame with purpose, crafting stories that
+                      speak beyond words.
+                    </p>
+                  </div>
+                </div>
+                <div class="team-members">
+                  <div class="team-member">
+                    <div class="member-avatar">
+                      <img
+                        src="profiles/new/Sakshi Lakhotiya.jpeg"
+                        alt="Member"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h5>Sakshi Lakhotiya</h5>
+                    <p>Photography and Videography Executive</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- Previous Team -->
+            <div id="previous-team" class="team-year-content hidden">
+              <h3 class="team-section-title">2023-2024 Leadership Team</h3>
+
+              <!-- Previous Core Team -->
+              <div class="core-team">
+                <div class="core-members">
+                  <div class="core-member">
+                    <div class="member-image">
+                      <img
+                        src="profiles/old/anekant.jpg"
+                        alt="Former President"
+                        loading="lazy"
+                      />
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/anekantjain01?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      style="text-decoration: none; outline: none; border: none"
+                    >
+                      <div class="member-info">
+                        <h4>Anekant Jain</h4>
+                        <div class="member-role">Former President</div>
+                        <p class="member-description">
+                          Led the club through significant growth, establishing
+                          key partnerships and launching the certification
+                          program. Now working as Cloud Engineer at Google.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="core-member">
+                    <div class="member-image">
+                      <img
+                        src="profiles/old/lochan.jpg"
+                        alt="Former Vice President"
+                        loading="lazy"
+                        style="object-fit:cover;object-position: top;"
+                      />
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/lochan-vaidya-20899425a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      style="text-decoration: none"
+                    >
+                      <div class="member-info">
+                        <h4>Lochan Vaidya</h4>
+                        <div class="member-role">Former Vice President</div>
+                        <p class="member-description">
+                          Instrumental in developing the club's technical
+                          curriculum and workshop series. Currently pursuing AWS
+                          Solutions Architect Professional certification.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Previous Department Teams -->
+              <div class="department-teams">
+                <div class="team-tabs">
+                  <button class="team-tab-btn active" data-team="technical">
+                    Technical Team
+                  </button>
+                  <button class="team-tab-btn" data-team="events">
+                    Design and Graphics Department
+                  </button>
+                  <button class="team-tab-btn" data-team="marketing">
+                    Content and Ideation Executive
+                  </button>
+                  <button class="team-tab-btn" data-team="operations">
+                    Operations Team
+                  </button>
+                  <button class="team-tab-btn" data-team="pr">PR Team</button>
+                  <button class="team-tab-btn" data-team="socialmedia">
+                    Social Media Team
+                  </button>
+                  <button class="team-tab-btn" data-team="photography">
+                    Photography Team
+                  </button>
+                </div>
+
+                <!-- Previous Technical Team -->
+                <div id="previous-technical-team" class="team-section active">
+                  <div class="team-head">
+                    <div class="head-image">
+                      <img
+                        src="profiles/old/shivam-verma.jpg"
+                        alt="Demo Technical Head"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="head-info">
+                      <h4>Shivam Verma</h4>
+                      <div class="head-role">Technical Head</div>
+                      <p class="head-description">
+                        Demo description for previous technical head.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="team-members">
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/aryan-diwedi.png"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Aryan Dwivedi</h5>
+                      <p>DSA Mentor</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/ansh-rajani.png"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Ansh Rajani</h5>
+                      <p>AI/ML Mentor</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/aryan-singh.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Aryan Singh</h5>
+                      <p>Technical Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/darshini.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Darshni Yadav</h5>
+                      <p>Technical Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/tanish-mishra.jpg"
+                          alt=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Tanish Mishra</h5>
+                      <p>Technical Executive</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Previous Design and Graphics Department -->
+                <div id="previous-events-team" class="team-section">
+                  <div class="team-head">
+                    <div class="head-image">
+                      <img
+                        src="profiles/old/antara-deshpande.jpeg"
+                        alt="Demo Design Head"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="head-info">
+                      <h4>Antara Deshpande</h4>
+                      <div class="head-role">Design Head</div>
+                      <p class="head-description">
+                        Demo description for previous design head.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="team-members">
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/aanushka.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Aanushka Sharma</h5>
+                      <p>Designer</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/khushi.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Khushi Malhotra</h5>
+                      <p>Designer</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/lahar.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Lahar</h5>
+                      <p>Designer</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Previous Content and Ideation Executive -->
+                <div id="previous-marketing-team" class="team-section">
+                  <div class="team-head">
+                    <div class="head-image">
+                      <img
+                        src="profiles/old/chetan mehta.jpg"
+                        alt="Demo Content Head"
+                        loading="lazy"
+                        style="object-fit:cover;object-position: top;"
+                      />
+                    </div>
+                    <div class="head-info">
+                      <h4>Chetan Mehta</h4>
+                      <div class="head-role">Content Head</div>
+                      <p class="head-description">
+                        Chetan Mehta, as Content Head, elevates AWS Cloud Club's
+                        presence by creating engaging, informative content. His
+                        strategic storytelling skills strengthen our brand,
+                        keeping the community informed, motivated, and connected
+                        to the latest in AWS and cloud trends.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="team-members">
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/mannat.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Mannat Bhatia1</h5>
+                      <p>Content Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/harshali.jpeg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Harshali Mendake</h5>
+                      <p>Content Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/priya gupta.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Priya Gupta</h5>
+                      <p>Content Executive</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Previous Operations Team -->
+                <div id="previous-operations-team" class="team-section">
+                  <div class="team-head">
+                    <div class="head-image">
+                      <img
+                        src="profiles/old/dolly.jpg"
+                        alt="Demo Operations Head"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="head-info">
+                      <h4>Dolly Malviya</h4>
+                      <div class="head-role">Operations Head</div>
+                      <p class="head-description">
+                        As Operations Mentor, Dolly Malviya ensures AWS Cloud
+                        Club runs smoothly by overseeing logistics and
+                        operational planning. Her organizational skills
+                        streamline events, optimize processes, and support team
+                        coordination, creating an efficient and productive
+                        environment for successful club activities.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="team-members">
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/pavit.jpeg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Pavit Singh</h5>
+                      <p>Operations Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/pawni.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Pawni Majawadia</h5>
+                      <p>Operations Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/aashi dubey.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Aashi Dubey</h5>
+                      <p>Operations Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/tanuj raghuvanshi.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Tanuj Raghuwanshi</h5>
+                      <p>Operations Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="profiles/old/shaurya.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Shaurya Singh</h5>
+                      <p>PR Executive</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Previous PR Team -->
+                <div id="previous-pr-team" class="team-section">
+                  <div class="team-head">
+                    <div class="head-image">
+                      <img
+                        src="/profiles/old/animesh bokil.jpg"
+                        alt="Demo PR Head"
+                        loading="lazy"
+                        style="object-fit:cover;object-position: top;"
+                      />
+                    </div>
+                    <div class="head-info">
+                      <h4>Animesh Bokil</h4>
+                      <div class="head-role">PR Head</div>
+                      <p class="head-description">
+                        Demo description for previous PR head.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="team-members">
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/satviki.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Satviki Pandey</h5>
+                      <p>PR Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/akshat raikhere.png"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Akshat Raikhere</h5>
+                      <p>PR Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/shymal.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Shymal Sheorey</h5>
+                      <p>PR Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/mansi-bajpai.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Mansi Bajpai</h5>
+                      <p>PR Executive</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Previous Social Media Team -->
+                <div id="previous-socialmedia-team" class="team-section">
+                  <div class="team-head">
+                    <div class="head-image">
+                      <img
+                        src="https://via.placeholder.com/100x100?text=Demo"
+                        alt="Demo Social Media Head"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="head-info">
+                      <h4>Demo Social Media Head</h4>
+                      <div class="head-role">Social Media Head</div>
+                      <p class="head-description">
+                        Demo description for previous social media head.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="team-members">
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/satviki.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Satviki Pandey</h5>
+                      <p>Social Media Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/akshat raikhere.png"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Akshat Raikhere</h5>
+                      <p>Social Media Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/shymal.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Shymal Sheorey</h5>
+                      <p>Social Media Executive</p>
+                    </div>
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="/profiles/old/mansi-bajpai.jpg"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Mansi Bajpai</h5>
+                      <p>Social Media Executive</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Previous Photography Team -->
+                <div id="previous-photography-team" class="team-section">
+                  <div class="team-head">
+                    <div class="head-image">
+                      <img
+                        src="https://via.placeholder.com/100x100?text=Demo"
+                        alt="Demo Photography Head"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="head-info">
+                      <h4>Demo Photography Head</h4>
+                      <div class="head-role">Photography Head</div>
+                      <p class="head-description">
+                        Demo description for previous photography head.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="team-members">
+                    <div class="team-member">
+                      <div class="member-avatar">
+                        <img
+                          src="https://via.placeholder.com/80x80?text=Demo"
+                          alt="Demo Member"
+                          loading="lazy"
+                        />
+                      </div>
+                      <h5>Demo Photography Member 1</h5>
+                      <p>Photography Executive</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Team Toggle Button -->
+        <button id="teamToggleBtn" class="team-toggle-btn">
+          <i class="fas fa-users"></i>
+          View Previous Team
+        </button>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact scroll-animate">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+              Ready to start your cloud journey? Connect with us and become part
+              of our amazing community.
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>
+                  Have questions or want to join? Send us an email and we'll get
+                  back to you within 24 hours.
+                </p>
+                <a href="mailto:contact@awscloudclub.edu" class="contact-link">
+                  <i class="fas fa-paper-plane"></i>
+                  contact@awscloudclub.edu
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <h3>Join Our Discord</h3>
+                <p>
+                  Connect with fellow members, get help with projects, and stay
+                  updated on all club activities.
+                </p>
+                <a href="#" class="contact-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  Join Discord Server
+                </a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>
+                  Find us at our weekly meetings every Friday at 6 PM in the
+                  Computer Science building.
+                </p>
+                <a href="#" class="contact-link">
+                  <i class="fas fa-directions"></i>
+                  Get Directions
+                </a>
+              </div>
+            </div>
+
+            <div class="cta-section">
+              <div class="cta-content">
+                <h3>Ready to Transform Your Career?</h3>
+                <p>
+                  Join hundreds of students who have already started their cloud
+                  computing journey with us. Whether you're a complete beginner
+                  or looking to advance your skills, we have something for
+                  everyone.
+                </p>
+                <div class="cta-buttons">
+                  <a href="#" class="cta-button primary">
+                    <i class="fas fa-user-plus"></i>
+                    Join the Club
+                  </a>
+                  <a href="#events" class="cta-button secondary">
+                    <i class="fas fa-calendar-check"></i>
+                    Attend Next Event
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <div class="footer-logo">
+                <div class="logo-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <span>AWS Cloud Club</span>
+              </div>
+              <p class="footer-description">
+                Empowering the next generation of cloud professionals through
+                hands-on learning, industry partnerships, and a supportive
+                community of learners and innovators.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-discord"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul class="footer-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#teams">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Resources</h4>
+              <ul class="footer-links">
+                <li><a href="#">AWS Free Tier</a></li>
+                <li><a href="#">Certification Guide</a></li>
+                <li><a href="#">Learning Path</a></li>
+                <li><a href="#">Project Gallery</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-section">
+              <h4>Community</h4>
+              <ul class="footer-links">
+                <li><a href="#">Discord Server</a></li>
+                <li><a href="#">Study Groups</a></li>
+                <li><a href="#">Mentorship</a></li>
+                <li><a href="#">Alumni Network</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2024 AWS Cloud Club. All rights reserved.</p>
+            <p>Powered by AWS and GeeksforGeeks</p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

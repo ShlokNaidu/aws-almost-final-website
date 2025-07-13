@@ -1854,6 +1854,7 @@ section {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    border-radius: var(--radius-xl);
 }
 
 .head-info h4 {
@@ -1876,9 +1877,11 @@ section {
 }
 
 .team-members {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--space-xl);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team-member {
@@ -1888,6 +1891,8 @@ section {
     border-radius: var(--radius-xl);
     border: 1px solid var(--border-color);
     transition: all var(--transition-normal);
+    width:250px;
+    height:250px;
 }
 
 .team-member:hover {
@@ -1897,14 +1902,15 @@ section {
 }
 
 .member-avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin: 0 auto var(--space-md);
-    border-radius: 50%;
+    /* border-radius: 50%; */
     overflow: hidden;
-    border: 3px solid var(--aws-purple);
+    /* border: 3px solid var(--aws-purple); */
     transition: all var(--transition-normal);
 }
+
 
 .team-member:hover .member-avatar {
     border-color: var(--aws-purple-light);
@@ -1915,8 +1921,8 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
-
+    border-radius: 50%;
+    border: 3px solid var(--aws-purple);
 }
 
 .team-member h5 {
